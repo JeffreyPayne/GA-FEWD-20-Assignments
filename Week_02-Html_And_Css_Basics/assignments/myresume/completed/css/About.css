@@ -7,7 +7,7 @@ body {
   border-top: 5px solid #222222;
   padding: 50px;
   background: lightgrey;
-  background-image: url(http://giphy.com/gifs/glitch-8bit-databend-FCdAnsJ2wEqR2.gifs);
+  background-image: url(http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg);
 }
 
 a {
@@ -54,7 +54,7 @@ p {
   font-family: "Tekton Pro", sans-serif;
   margin-top: 0;
   margin-bottom: 27px;
-  color: #05080C;
+  color: white;
   border-width: 5px;
   border-color: HSL(240, 50%, 50%);
   border-style: dotted;
@@ -80,7 +80,9 @@ hr {
 
 img {
   /*float: right;*/
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   margin-bottom: 20px;
   border: 1px solid #222222;
   padding: 0px;
@@ -93,6 +95,9 @@ img[alt] {
 
 video#jeffintrovideo {
   width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 nav {
