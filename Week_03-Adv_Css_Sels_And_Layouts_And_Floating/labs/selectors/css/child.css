@@ -1,7 +1,11 @@
 
 /** CSS RULES GO IN HERE */
 
+section a {
+	font-family: cursive;
+}
 
-
-
+section > div a[href] {
+	background-color: green;
+}
 

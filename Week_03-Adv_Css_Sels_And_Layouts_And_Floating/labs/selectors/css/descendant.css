@@ -1,6 +1,25 @@
 
 /** CSS RULES GO IN HERE */
 
+section p#para1 a {
+	color: #00FF00;
+}
+
+section p#para2 a {
+	color: #0000FF;
+}
+
+section p#para1 a:hover {
+	background-color: purple;
+	font-style: italic;
+}
+
+section p#para2 a:hover {
+	background-color: red;
+	font-weight: bold;
+	font-size: 200px;
+}
+
 
 
 

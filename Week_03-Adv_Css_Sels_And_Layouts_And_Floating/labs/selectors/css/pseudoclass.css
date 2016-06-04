@@ -1,7 +1,21 @@
 
 /** CSS RULES GO IN HERE */
 
+a#RealEstateListings:hover  {
+	color: pink;
+	font-size: 300px;
+	font-style: Arial;
+	background-color: blue;
 
+}
+
+article.myarticle:last-child {
+	background-color: #FF00B8;
+}
+
+article.myarticle:first-child {
+	font-style: Tekton-Pro, sans serif;
+}
 
 
 
