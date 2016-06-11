@@ -20,16 +20,16 @@ body {
 
 #outerbox {
   background-color: #000000;
-  width: 600px;
-  height: 600px;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  width: 50%;
+  height: 77%;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 #outerbox > .step {
-  /* position: absolute; */
+  position: absolute;
   width: 150px;
   height: 150px;
   font-size: 4rem;
@@ -39,8 +39,26 @@ body {
 }
 
 #outerbox > .step:nth-child(1) {
-  /* top: 0px; */
-  /* left: 0px; */
+  top: 0%; 
+  left: 0%; 
   background-color: #FF0000;
+}
+
+#outerbox > .step:nth-child(2) {
+  top: 25%; 
+  left: 25%; 
+  background-color: #00FF00;
+}
+
+#outerbox > .step:nth-child(3) {
+  top: 50%; 
+  left: 50%; 
+  background-color: #00FFFF;
+}
+
+#outerbox > .step:nth-child(4) {
+  bottom: 0%; 
+  right: 0%; 
+  background-color: #FFFFFF;
 }
 
