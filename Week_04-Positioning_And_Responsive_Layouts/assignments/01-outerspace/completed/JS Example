@@ -1,0 +1,138 @@
+console.log("Hi my name is Jeff")
+console.log(2*6);
+
+var x=10*6;
+var y=x+10; 
+console.log(x*y);
+
+function add (x,y) {
+	return (x+y)
+}
+
+var a = add(20,30);
+
+console.log(a);
+
+function r (x,y) {
+	return (x+y);
+}
+
+function t (f,a,b) {
+	return f(a,b);
+}
+
+var w = t(r, 10, 5);
+
+console.log(w);
+
+function add (x,y) {
+	return (x + y);
+}
+
+console.log(add);
+
+var g = add;
+var z = g(8,200);
+
+console.log(z);
+
+var add = function (x,y) {
+	return (x+y);
+}
+
+var z= add(20,8);
+
+console.log(z);
+-----------------------------------------------
+function displayResults (f) {
+	var result = f();
+	console.log("Number is" + result);
+}
+
+function a() {
+	return 1
+}
+
+function b () {
+	return 2
+}
+
+displayResults(a);
+displayResults(b);
+----------------------------------------------
+window.alert("My name is Jeff")
+------------------------------------------
+"use strict";
+
+function dostuff () {
+	var x=1;
+	var y=x+y;
+	return z;
+}
+
+console.log(dostuff());
+
+-------------------------------------------
+"use strict";
+
+function box1 () {
+	function box2() {
+      function box3() {
+        var x=10;
+	  }
+      function box4() {
+	
+      }
+   }
+   function box5() {
+
+   }
+ }
+  console.log(x);
+
+box1();
+--------------------------------------
+"use strict";
+debugger
+
+var x = "Hello World";
+var y = x.substring(0,5);
+
+console.log(y);
+------------------------------------------
+"use strict";
+
+function n (a,b,c) {
+    debugger;
+    var d = c;
+    var e = d;
+    var f = e;
+    return (a * b * f);
+}
+var s = 4;
+var t = 5;
+var u = 6;
+var r = n(s, t, u);
+
+console.log(r);
+------------------------------------------
+"use strict";
+
+function n (x,y) {
+  debugger;
+  var t = x * y;
+  t = t +5;
+  var w = 25;
+  while (t<= (w + 3)) {
+    t = t + 2;
+  }
+  var r = t;
+  return r;
+  }
+
+  var f = n(2,3);
+  console.log(f);
+}
+-------------------------------------------------
+
+

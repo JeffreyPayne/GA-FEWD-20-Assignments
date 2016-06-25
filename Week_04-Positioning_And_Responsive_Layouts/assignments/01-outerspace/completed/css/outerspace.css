@@ -30,7 +30,7 @@ body {
   z-index: 100;
   top: 65%;
   left: 55%;
-  background: linear-gradient(to bottom right: white, red);
+  background: linear-gradient(to bottom right, white, red);
 }
 
 #boxes > article:nth-child(2) {
