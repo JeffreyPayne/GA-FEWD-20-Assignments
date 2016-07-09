@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <body>
+    <form>
+
+      <fieldset>
+        <label for="username">Username</label>
+        <input 
+          id="username" 
+          name="username" 
+          type="text" 
+          value="johndoe" 
+          placeholder="Enter your username" />
+      </fieldset>
+
+      <fieldset>
+      	<label for="password">Password</label>
+        <input 
+          id="password" 
+          name="password" 
+          type="password" 
+          value="123456" 
+          placeholder="Enter your password" 
+          required="required" />
+      </fieldset>
+
+      <fieldset>
+        <label for="bio">Biography</label>
+        <textarea placeholder="Enter your bio" id="bio" name="bio">
+          Hi my name is john doe. I like to go fishing and eat burritos all day. I wish I had more hugs when I was a child.
+        </textarea>
+      </fieldset>
+
+      <fieldset>
+      <select 
+        id="animal" 
+        name="animal" 
+        multiple="multiple">
+
+        <optgroup label="Dogs">
+          <option value="pitbull" selected="selected">Pit Bull</option>
+        </optgroup>
+        <optgroup label="Cats">
+          <option value="chesshire">Chesshire</option>option>
+        </optgroup>
+      </select>
+      </fieldset>
+
+      <fieldset>
+      <label for="newsletter">Receive Newsletter?</label>
+      <input 
+        type="checkbox" 
+        id="newsletter" 
+        name="newsletter" 
+        checked="checked" />
+      </fieldset>
+
+      <input type="radio" id="food_burritos" name="food" value="burritos" />
+
+      <input type="radio" id="food_tofu" name="food" value="tofu" />
+
+      <input 
+        type="number" 
+        min="5" 
+        max="20" p
+        placeholder="Enter your age" 
+        id="age" 
+        name="age" />
+
+      <div id="birthday_box">
+        <span>Birthday</span>
+        <input id="birthday" name="birthday" type="datetime-local" />
+      </div>
+
+      <input type="submit" value="Create Account" />
+
+    </form>
+  </body>
+</html>
