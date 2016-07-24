@@ -16,7 +16,7 @@
       <h1>Mortgage Calculator</h1>
       </header>
 
-      <form>
+      <form id="mainform">
       	
         <fieldset>
           <label for="PurchasePrice">Purchase Price ($)</label>
@@ -69,9 +69,8 @@
         <fieldset>
           <label for="PaymentFrequency">Payment Frequency</label>
           <select id="PaymentFrequency" name="PaymentFrequency" required > 
-          <option value="Monthly" selected>Monthly</option>
-          <option value="Semi-Monthly">Semi-Monthly</option>
-          <option value="Annually">Annually</option>
+            <option value="12" selected>Monthly</option>
+            <option value="26">Bi-Weekly</option>
           </select>
         </fieldset>
 

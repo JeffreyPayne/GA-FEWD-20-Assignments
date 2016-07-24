@@ -1,5 +1,11 @@
 "use strict";
 
+var startup = function () {
+
+};
+
+var handlesubmit = function ()
+
 var PurchasePrice = parseInt($("#PurchasePrice"),val());
 
 var LoanAmount = parseInt($("#LoanAmount"),val());
@@ -7,12 +13,6 @@ var LoanAmount = parseInt($("#LoanAmount"),val());
 var AnnualIntRate = parseFloat($("#AnnualIntRate"),val());
 
 var LoanTerm = parseInt($("#LoanTerm"),val());
-
-<select id="PaymentFrequency">
-  <option value="12">Monthly</option>
-  <option value="24">Semi-Monthly</option>
-  <option value="1">Annually</option>
-</select>
 
 var AnnualPropertyTax = parseFloat($("#AnnualPropertyTax"),val());
 
