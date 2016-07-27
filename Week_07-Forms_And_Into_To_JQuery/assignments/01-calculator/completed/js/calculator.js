@@ -1,5 +1,5 @@
 "use strict";
 
-var sum=addTwoNumbers
+var sum=addTwoNumbers(a,b);
 
 var diff=subTwoNumbers

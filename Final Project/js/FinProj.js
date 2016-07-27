@@ -1,28 +1,34 @@
 "use strict";
 
 var startup = function () {
-
+  $("form#mainform").on("submit", handleSubmit);
 };
 
-var handlesubmit = function ()
+var handleSubmit = function () {
+  var PurchasePrice = parseInt($("#PurchasePrice").val());
+  var LoanAmount = parseInt($("#LoanAmount").val());
+  var AnnualIntRate = parseFloat($("#AnnualIntRate").val());
+  var LoanTerm = parseInt($("#LoanTerm").val());
+  var PaymentFrequency = parseInt($("#PaymentFrequency").val());
 
-var PurchasePrice = parseInt($("#PurchasePrice"),val());
+  //var AnnualPropertyTax = parseFloat($("#AnnualPropertyTax").val());
+  //var PMI = parseFloat($("#PMI").val());
+  //var HomeInsurance = parseFloat($("#HomeInsurance").val());
+  //var MonthlyHOD = parseFloat($("#MonthlyHOD").val());
 
-var LoanAmount = parseInt($("#LoanAmount"),val());
+  var monthlyIntRate = (AnnualIntRate / PaymentFrequency);
+  var monthlyLoanAmount = (LoanAmount * monthlyIntRate);
+  var monthlyIntRatePlusOne = 1 + monthlyIntRate;
+  var loanTermNegYear = (-12 * LoanTerm);
+  var powered = Math.pow(monthlyIntRatePlusOne, loanTermNegYear);
+  var oneMinusPowered = 1 - powered;
+  var Answer = monthlyLoanAmount / oneMinusPowered;
 
-var AnnualIntRate = parseFloat($("#AnnualIntRate"),val());
+  var TotalPayment = $("#TotalPayment");
+  $("#TotalPayment").val(Answer);
 
-var LoanTerm = parseInt($("#LoanTerm"),val());
+  return false;
+};
 
-var AnnualPropertyTax = parseFloat($("#AnnualPropertyTax"),val());
+$(document).ready(startup);
 
-var PMI = parseFloat($("#PMI"),val());
-
-var HomeInsurance = parseFloat($("#HomeInsurance"),val());
-
-var MonthlyHOD = parseFloat($("#MonthlyHOD"),val());
-
-var TotalPayment = "#LoanAmount"*["#AnnualIntRate"*(1+"#AnnualIntRate")**"#LoanTerm"]/[(1+"#AnnualIntRate")**"#LoanTerm"-1]
-
-var Answer = $("#Answer");
-  Answer.val(TotalPayment);
